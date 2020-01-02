@@ -8,6 +8,10 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
   },
+  {
+    path: 'public',
+    loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)
+  }
 ];
 
 @NgModule({
