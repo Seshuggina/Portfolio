@@ -15,3 +15,9 @@ body .header,
 body {
     transition: background 200ms linear;
 }
+
+[disabled],
+.disabled {
+    pointer-events: none !important;
+    background-color: #dddddd !important;
+}
